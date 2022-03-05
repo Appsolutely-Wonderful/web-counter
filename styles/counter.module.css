@@ -1,0 +1,116 @@
+.center {
+    text-align: center;
+}
+
+.counter_button {
+    margin-top: 5px;
+    background:none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    animation-name: counter-button-fade-out;
+    animation-duration: 0.5s;
+}
+
+.counter_button:hover {
+    animation-name: counter-button-fade-in;
+    animation-duration: 0.5s;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.counter_button:active {
+    background-color: #ddd;
+    animation-duration: 0s;
+}
+
+.input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input_button {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding: 10px;
+    background: none;
+    margin-left: 0;
+}
+
+.input_button:hover {
+    cursor: pointer;
+    animation-name: counter-button-fade-in;
+    animation-duration: 0.5s;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.input_button:active {
+    background-color: #ddd;
+    animation-duration: 0s;
+}
+
+@keyframes counter-button-fade-in {
+    from {
+      background: none;
+    }
+  
+    to {
+      background-color: #eee;
+    }
+}
+
+@keyframes counter-button-fade-out {
+    from {
+      background: #eee;
+    }
+  
+    to {
+      background-color: none;
+    }
+}
+
+.counter_box {
+ padding-bottom: 50px;
+ max-width: 500px;
+ border-top: 1px solid #eee;
+ padding-top: 18px;
+}
+
+.counter_name {
+    display: inline;
+    float: left;
+    padding-right: 25px;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.counter_btn_box {
+    display: inline;
+    float: right;
+    margin-bottom: 0;
+}
+
+.counter_plus_minus {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
